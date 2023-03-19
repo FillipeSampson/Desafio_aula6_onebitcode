@@ -1,0 +1,28 @@
+class Esportista 
+    def competir
+        puts "Participar de uma competição"
+    end
+end
+
+class Jogadordefutebol < Esportista
+    def correr 
+        puts "Correr atrás da bola"
+    end
+end
+
+class Maratonista < Esportista
+    def correr
+        puts "Percorrerendo o circulo"
+    end
+end
+
+jogador = Jogadordefutebol.new
+martonista = Maratonista.new
+puts "\njogador:"
+jogador.competir
+puts "\njogador:"
+jogador.correr
+puts "\nmaratonista:"
+martonista.competir
+puts "\nmaratonista:"
+martonista.correr
